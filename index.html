@@ -8,7 +8,7 @@
     <header class="page-header">
       <nav class="main-navigation"> 
         <a class="main-header-logo">
-          <img scr="" width="100" height="50" alt="Техномарт"> 
+          <img scr="" width="100" height="50" alt="Логотип супермаркта Техномарт"> 
         </a>
         <ul class="info-navigation">
           <li class="search">Поиск: </li>
@@ -20,8 +20,12 @@
         <p>+7 (812)555-05-55</p>
         <p>г. Санкт-Петербург, ул.Б.Конюшенная, д.19/8</p>
         <ul class="user-navigation">
-          <li><a href="user-input.html">Войти</a></li>
-          <li><a href="user-registr.html">Регистрация</a></li>
+          <li class="user-login-link">
+            <a class="user-login-link" href="login.html">Войти</a>
+          </li>
+          <li class="user-registr">
+              <a class="user-registr" href="registr.html">Регистрация</a>
+          </li>
         </ul>
         <ul class="main-header-menu">
           <li><a href="index.html">Главная</a></li>
@@ -144,19 +148,19 @@
                 </a>
             </p>
 
-      <a class="button" href="">Все производители</a>
+      <a class="button" href="catalog-producers.html">Все производители</a>
      </section>
 
-     <section class="service">
+    <section class="service">
       <h2>Сервисы</h2>
       <ul>
         <li>Доставка</li>
         <li>Гарантия</li>
         <li>Кредит</li>
       </ul>
-     </section>
+    </section>
 
-     <section class="add-info">
+    <section class="add-info">
        <h2 class="visually-hidden">Дополнительная информация</h2>
           <h3>Компания Техномарт</h3>
               <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
@@ -173,15 +177,36 @@
     <section class="map-contact">
        <h3>Контакты</h3>
        <p>Вы можете забрать товар сами,<br> заехав в наш офис:</p>
-       <p>x карта</p>
-       <a class="button" href="map.html">Заблудились? Напишите нам!</a>  
+         <a href="img/map.png"> 
+            <img src="img/small-map.png" width="300" height="150" alt="Офис по адресу г.Санкт-Петербург, ул.Б.Конюшенная, д.19/">
+        </a>    
     </section>
-    </main> 
+
+    <section class="">
+      <p>Заблудились? Напишите нам!</p> 
+      <form class="write-us" action="http://echo.htmlacademy.ru" method="post">
+        <p>
+          <label class="visually-hidden" for="user-name">Ваше имя:</label>
+          <input class="name" id="user-name" type="text" name="user-name" placeholder="Представтесь, пожалуста">
+        </p>
+        <p>
+          <label class="visually-hidden" for="user-e-mail">Ваш e-mail:</label>
+          <input class="e-mail" id="user-e-mail" type="email" name="user-email" placeholder="Для отправки ответа">
+        </p>
+        <p>
+          <label class="visually-hidden" for="user-letter">Текст письма</label>
+          <textarea class="letter" id="user-letter" name="user-letter" rows="7">В свободной форме
+          </textarea>
+        </p>
+        <button class="button" type="submit">Отправить</button>
+      </form>
+    </section>
+ </main> 
 
     <footer class="footer-page">
         <section class="top-menu-footer">
             <div class= "footer-logo">
-              <img scr="#" width="200" height="50" alt="Логотип Техномарт" >
+              <img scr="#" width="200" height="50" alt="Логотип супермаркта Техномарт" >
             </div>
             <ul>
               <li><a href="company.html">Компания</a></li>

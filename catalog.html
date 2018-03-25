@@ -8,7 +8,7 @@
     <header class="page-header">
       <nav class="main-navigation"> 
         <a class="main-header-logo">
-          <img scr="" width="100" height="50" alt="Техномарт"> 
+          <img scr="" width="100" height="50" alt="Логотип супермаркта Техномарт"> 
         </a>
         <ul class="info-navigation">
           <li class="search">Поиск: </li>
@@ -20,7 +20,9 @@
         <p>+7 (812)555-05-55</p>
         <p>г. Санкт-Петербург, ул.Б.Конюшенная, д.19/8</p>
         <ul class="user-navigation">
-          <li><a href="user-input.html">Войти</a></li>
+          <li class="user-login-link">
+            <a class="user-login-link" href="login.html">Войти</a>
+          </li>
           <li><a href="user-registr.html">Регистрация</a></li>
         </ul>
         <ul class="main-header-menu">
@@ -41,6 +43,54 @@
       <section class="filter">
          <h3>Фильтр</h3>
          <!--Фильтр-->
+         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+         <fieldset>
+            <legend>Цена:</legend>
+            <label for="price">Цена</label>
+             1<input type="range" name="price" id="price" min="0" max="30000"step="100">30000
+         </fieldset>
+        
+         <fieldset>
+          <legend>Производители</legend>
+          <ul>
+            <li>
+              <input type="checkbox" name="bosch" id="bosch"checked>
+              <label for="bosch">Bosch</label>
+            </li>
+            <li>
+                <input type="checkbox" name="interskop" id="interskop">
+                <label for="interskop">Интерскоп</label>
+            </li>
+            <li>
+              <input type="checkbox" name="makita" id="makita"checked>
+              <label for="makita">Makita</label>
+            </li>
+            <li>
+              <input type="checkbox" name="dewalt" id="dewalt">
+              <label for="dewalt">Dewalt</label>
+            </li>
+            <li>
+                <input type="checkbox" name="hitachi" id="hitachi">
+                <label for="hitachi">Bosch</label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset>
+          <legend>Питание</legend>
+          <ul>
+            <li>
+              <input type="radio" name="power" value="battery" id="battery" checked>
+              <label for="battery">Аккумуляторные</label>
+            </li>
+            <li>
+              <input type="radio" name="power" value="net" id="net">
+              <label for="net">Сетевое</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button type="submit">Показать</button>
+        </form>
       </section>
 
      <section class="sorting">
@@ -206,7 +256,7 @@
     <footer class="footer-page">
         <section class="top-menu-footer">
             <div class= "footer-logo">
-              <img scr="#" width="200" height="50" alt="Логотип Техномарт" >
+              <img scr="#" width="200" height="50" alt="Логотип супермаркта Техномарт" >
             </div>
             <ul>
               <li><a href="company.html">Компания</a></li>
