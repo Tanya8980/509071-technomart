@@ -320,7 +320,7 @@ a{
   margin-bottom: 10px;
   color:#a9a9a9;
   text-decoration: line-through;
-  }
+}
 
 .favorit-producer{
   border:1px solid #f8f8f8;
@@ -332,7 +332,6 @@ a{
   line-height: 24px;
   color:#ffffff; 
 }
-
 
 .filters fieldset{
   border:none;
