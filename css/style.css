@@ -176,13 +176,13 @@ a{
   text-align: center;
 }
 .user-fields{
-    font-family: "Cuprum";
-    font-size: 16px;
-    line-height: 18px;
-    color: #32425c;
-    text-decoration: underline;
-    text-align: left;
-    position: absolute;
+   font-family: "Cuprum";
+   font-size: 16px;
+   line-height: 18px;
+   color: #32425c;
+   text-decoration: underline;
+   text-align: left;
+   position: absolute;
 }
 .container{
   background-color: #ffffff;
