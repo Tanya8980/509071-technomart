@@ -71,46 +71,49 @@
     </header>
     
     <main class="container">
+
      <h1 class="visually-hidden">Техномарт - Интернет-магазин строительных материалов и инструментов для ремонта </h1>
      
-     <section class="catalog-navigation">
+    <section class="catalog-menu">
       <h2 class="visually-hidden">Каталог всех товаров:</h2>
-      <div class="catalog-menu"> 
-        <ul>
-          <li class="stock new"><p>Материалы</p>
-            <img src="img/stock.png" width="44" height="65">
+        <div class="promo-box stock">
+            <p>Материалы</p>
+            <img class="picon" src="img/stock.png" width="44" height="65">
             <a class="button" href="stock.html">на любой вкус</a>
-          </li>
-          <li class="tools"><p>Инструмент</p>
-            <img src="img/tools.png" width="75" height="61">
+        </div>
+          <div class="promo-box tools">
+            <p>Инструмент</p>
+            <img class="picon" src="img/tools.png" width="75" height="61">
             <a class="button" href="tools.html">на все случаи</a>
-          </li>
-          <li class="techno"><p>Техника</p>
-           <img src="img/techno.png" width="78" height="62"> 
-           <a class="button" href="techno.html">для стройки</a>
-          </li>
-          <li class="discount"><p>Скидка 50%</p>
-            <img src="img/discount.png" width="59" height="72">
+          </div>
+          <div class="promo-box techno">
+            <p>Техника</p>
+            <img class="picon" src="img/techno.png" width="78" height="62"> 
+            <a class="button" href="techno.html">для стройки</a>
+          </div>
+          <div class="promo-box discount">
+            <p>Скидка 50%</p>
+            <img class="picon" src="img/discount.png" width="59" height="63">
             <a class="button" href="discount.html">на 350 товаров</a>
-          </li>
-          <li class="delivery"><p>Доставка</p>
-            <img src="img/delivery.png" width="73" height="63">
+          </div>
+          <div class="promo-box delivery">
+            <p>Доставка</p>
+            <img class="picon" src="img/delivery.png" width="73" height="63">
             <a class="button" href="delivery.html">бесплатно</a>
-          </li>
-        </ul> 
-      </div>
-      <div class="slider">
-        <h3 class="slider-1">Перфораторы</h3>
-           <p>Настоящие мужские игрушки!</p>
-           <img src="img/slid_1.jpg" width="620" height="266" alt="Перфораторы">
-           <a class="button" href="catalog.html">Открыть каталог</a>
-          
-        <h3 class="slide-2">Дрели</h3>
-         <p>Соседям на радость!</p>
-         <img src="img/slid_2.jpg" width="620" height="266" alt="Дрели-Соседям на радость!">
-         <a class="button" href="catalog.html">Открыть каталог</a>
-      </div>
-     </section>
+          </div>
+          <div class="promo-box slider visually-hidden">
+            <p>Перфораторы</p>
+            <span>Настоящие мужские игрушки!</span>
+            <img src="img/slid_1.jpg" width="5500" height="266" alt="Перфораторы">
+            <a class="button" href="catalog.html">Открыть каталог</a>
+          </div>
+          <div class="promo-box slider">
+            <img src="img/slid_2.jpg" width="560" height="270" alt="Дрели-Соседям на радость!">
+            <p>Дрели</p>
+            <span>Соседям на радость!</span>
+            <a class="button" href="catalog.html">Открыть каталог</a>
+          </div>
+    </section>
 
     <section class="favorit-products">
       <div class="favorit-box">
@@ -205,17 +208,17 @@
         </div>
         <ul class="favorit-producer" >
           <li><a href="catalog-producers.html">
-              <img src="img/bosch.png" width="100" height="40" alt="Bosch">
+              <img src="img/bosch.png" width="126" height="37" alt="Bosch">
             </a> 
           </li>
           <li>
             <a href="catalog-producers.html">
-              <img src="img/Makita.png" width="100" height="40" alt="Makita">
+              <img src="img/Makita.png" width="123" height="40" alt="Makita">
             </a>
           </li>
           <li>
               <a href="catalog-producers.html">
-                <img src="img/DeWALT.png" width="100" height="40" alt="DeWALT">
+                <img src="img/DeWALT.png" width="146" height="44" alt="DeWALT">
               </a>
             </li>
             <li>
@@ -230,17 +233,17 @@
             </li>
             <li>
                 <a href="catalog-producers.html">
-                  <img src="img/LG.png" width="100" height="40" alt="LG">
+                  <img src="img/LG.png" width="121" height="73" alt="LG">
                 </a>
               </li>
             <li>
               <a href="catalog-producers.html">
-                <img src="img/AEG.png" width="100" height="40" alt="AEG">
+                <img src="img/AEG.png" width="151" height="96" alt="AEG">
               </a>
             </li>
             <li>
                 <a href="catalog-producers.html">
-                  <img src="img/Metabo.png" width="100" height="40" alt="Metabo">
+                  <img src="img/Metabo.png" width="184" height="62" alt="Metabo">
                 </a>
               </li>
             </ul>
@@ -252,27 +255,39 @@
         <p>Хороший интернет-магазин отличается от плохого не только ценами!<br> 
         Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
       </div>
-      <ul class="service-list">
-        <li class="action">Доставка</li>
-        <li>Гарантия</li>
-        <li>Кредит</li>
-      </ul>
-      <ul class="service">
-        <li><h3>Доставка</h3>
-            <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
-                Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
-        </li>
+      <div class="service-list">
+        <a class="btn-service action">Доставка<a/>
+        <a class="btn-service">Гарантия</a>
+        <a class="btn-service">Кредит</a>
+      </div>
+      <div class="service service-delivery">
+        <img clas="shadow-img" src="img/service-shadow-delivery.png" width="467" height="261" alt="Доставка Тень">
+        <img class"delivery-img" src="img/service-delivery.png" width="206" height="146" alt="Доставка картинка">
+        <h3>Доставка</h3>
+            <p>Мы с удовольствием доставим ваш товар прямо<br>
+              к вашему подъезду совершенно бесплатно!<br>
+              Ведь мы неплохо заработаем,<br>
+              поднимая его на ваш этаж!</p>
+      </div>
+      <div class="service service-guaranty visually-hidden">
+        <img class="shadow-img" src="img/service-shadow-guaranty.png" width="388" height="271" alt="Гарантия Тень">
+        <img class="guaranty-img" src="img/service-guaranty.png" width="170" height="172" alt="Гарантия картинка">
+        <h3>Гарантия</h3>
+        <p>Если купленный товар поломается ли заискрит,<br>
+            а также в случае пожара, спровоцированного его возгоранием,<br>
+            вы всегда можете быть уверены в нашей гарантии. Мы обменяем<br>
+            сгоревший товар на новый.<br>
+            Дом уж восстановите как-нибудь сами.</p>
+      </div>
         
-        <li><h3>Гарантия</h3>
-            <p>Если купленный товар поломается ли заискрит, а также в случае пожара, спровоцированного его возгоранием,
-                 вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.
-                  Дом уж восстановите как-нибудь сами.</p>
-        </li>
-        <li><h3>Кредит</h3>
-            <p>Залететь в долговую яму стало проще! Кредитные консультации придут вам на помощь.</p>
-            <a class="btn-credit" href="credit.htm">Отправить заявку</a>
-        </li>
-      </ul>
+      <div class="service service-credit visually-hidden">
+          <img class="shadow-img" src="img/service-shadow-credit.png" width="459" height="284" alt="Кредит Тень">
+          <img class="credit-img" src="img/service-credit.png" width="181" height="184" alt="Кредит картинка ">
+        <h3>Кредит</h3>
+        <p>Залететь в долговую яму стало проще!<br>
+           Кредитные консультации придут вам на помощь.</p>
+        <a class="button" href="credit.htm">Отправить заявку</a>
+      </div>
     </section>
 
     <section class="add-info">
